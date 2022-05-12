@@ -5,9 +5,18 @@ channels:
 dependencies:
   - bzip2=1.0.8=h0d85af4_4
   - ca-certificates=2021.10.8=h033912b_0
+  - libblas=3.9.0=14_osx64_openblas
+  - libcblas=3.9.0=14_osx64_openblas
+  - libcxx=14.0.3=hc203e6f_0
   - libffi=3.4.2=h0d85af4_5
+  - libgfortran=5.0.0=9_3_0_h6c81a4c_23
+  - libgfortran5=9.3.0=h6c81a4c_23
+  - liblapack=3.9.0=14_osx64_openblas
+  - libopenblas=0.3.20=openmp_hb3cd9ec_0
   - libzlib=1.2.11=h6c3fc93_1014
+  - llvm-openmp=14.0.3=ha654fa7_0
   - ncurses=6.3=h96cf925_1
+  - numpy=1.22.3=py310he1f95b8_2
   - openssl=3.0.3=hfe4f2af_0
   - python=3.10.4=h1cc4136_0_cpython
   - python_abi=3.10=2_cp310
