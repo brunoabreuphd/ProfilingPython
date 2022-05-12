@@ -17,4 +17,4 @@ In each example, you will find a `profile.sh` script that will run the Python co
 
 
 ## Visualization
-Even though is possible to get statistics directly from [`cProfile`](https://docs.python.org/3/library/profile.html#module-cProfile), a great way to visualize the profiling results is with [`snakeviz`](http://jiffyclub.github.io/snakeviz/). It's very easy to use. For each example, you will find a `visualize.sh` script that, when run, will launch [`snakeviz`](http://jiffyclub.github.io/snakeviz/) in a browser tab. Have fun!
+Even though it is possible to get statistics directly from [`cProfile`](https://docs.python.org/3/library/profile.html#module-cProfile), a great way to visualize the profiling results is with [`snakeviz`](http://jiffyclub.github.io/snakeviz/). It's very easy to use. For each example, you will find a `visualize.sh` script that, when run, will launch [`snakeviz`](http://jiffyclub.github.io/snakeviz/) in a browser tab. Have fun!
