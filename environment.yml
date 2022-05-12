@@ -1,0 +1,26 @@
+name: profiling
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - bzip2=1.0.8=h0d85af4_4
+  - ca-certificates=2021.10.8=h033912b_0
+  - libffi=3.4.2=h0d85af4_5
+  - libzlib=1.2.11=h6c3fc93_1014
+  - ncurses=6.3=h96cf925_1
+  - openssl=3.0.3=hfe4f2af_0
+  - python=3.10.4=h1cc4136_0_cpython
+  - python_abi=3.10=2_cp310
+  - readline=8.1=h05e3726_0
+  - setuptools=62.2.0=py310h2ec42d9_0
+  - snakeviz=2.1.1=pyhd8ed1ab_0
+  - sqlite=3.38.5=hd9f0692_0
+  - tk=8.6.12=h5dbffcc_0
+  - tornado=6.1=py310h1961e1f_3
+  - tzdata=2022a=h191b570_0
+  - xz=5.2.5=haf1e3a3_1
+  - zlib=1.2.11=h6c3fc93_1014
+  - pip:
+    - pip==22.1
+    - wheel==0.37.1
+prefix: /Users/babreu/opt/anaconda3/envs/profiling
