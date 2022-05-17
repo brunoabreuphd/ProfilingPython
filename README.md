@@ -38,3 +38,17 @@ We use the [`memory_profiler`](https://pypi.org/project/memory-profiler/) module
 
 ![image](https://user-images.githubusercontent.com/84105092/168886421-18e657d5-f81b-4c82-a54c-2265e06ba901.png)
 
+### Line-by-line profile
+We can also target individual functions with the `@profile` decorator. [`memory_profiler`](https://pypi.org/project/memory-profiler/) will then show the amount of memory that the process associated to the Python interpreter is using as your code evolves, line by line. For each example, under `memory/line-by-line`, the `profile.sh` script runs the profiler and shows the results. A typical output is:
+
+![image](https://user-images.githubusercontent.com/84105092/168887141-c6379677-7cb1-4387-9349-772dd9ba145e.png)
+
+
+### Jupyter notebooks
+Profiling Jupyter notebooks directly involves gjumping through some hoops. The simplest alternative is to copy the content of your cells into a Python script. It possible to get the same effect with the [`nbconvert`](https://nbconvert.readthedocs.io/en/latest/index.html):
+
+```bash
+jupyter nbconvert <YourNB>.ipynb --to script
+```
+
+which will generate a `<YourNB>.py` script. Sometimes it looks quite ugly, though.
