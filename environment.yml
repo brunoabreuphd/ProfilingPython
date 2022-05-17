@@ -1,32 +1,11 @@
-# This file may be used to create an environment using:
-# $ conda create --name <env> --file <this file>
-# platform: osx-64
-@EXPLICIT
-https://conda.anaconda.org/conda-forge/osx-64/bzip2-1.0.8-h0d85af4_4.tar.bz2
-https://conda.anaconda.org/conda-forge/osx-64/ca-certificates-2021.10.8-h033912b_0.tar.bz2
-https://conda.anaconda.org/conda-forge/osx-64/libcxx-14.0.3-hc203e6f_0.tar.bz2
-https://conda.anaconda.org/conda-forge/osx-64/libffi-3.4.2-h0d85af4_5.tar.bz2
-https://conda.anaconda.org/conda-forge/osx-64/libzlib-1.2.11-h6c3fc93_1014.tar.bz2
-https://conda.anaconda.org/conda-forge/osx-64/llvm-openmp-14.0.3-ha654fa7_0.tar.bz2
-https://conda.anaconda.org/conda-forge/osx-64/ncurses-6.3-h96cf925_1.tar.bz2
-https://conda.anaconda.org/conda-forge/noarch/tzdata-2022a-h191b570_0.tar.bz2
-https://conda.anaconda.org/conda-forge/osx-64/xz-5.2.5-haf1e3a3_1.tar.bz2
-https://conda.anaconda.org/conda-forge/osx-64/libgfortran5-9.3.0-h6c81a4c_23.tar.bz2
-https://conda.anaconda.org/conda-forge/osx-64/openssl-3.0.3-hfe4f2af_0.tar.bz2
-https://conda.anaconda.org/conda-forge/osx-64/readline-8.1-h05e3726_0.tar.bz2
-https://conda.anaconda.org/conda-forge/osx-64/tk-8.6.12-h5dbffcc_0.tar.bz2
-https://conda.anaconda.org/conda-forge/osx-64/zlib-1.2.11-h6c3fc93_1014.tar.bz2
-https://conda.anaconda.org/conda-forge/osx-64/libgfortran-5.0.0-9_3_0_h6c81a4c_23.tar.bz2
-https://conda.anaconda.org/conda-forge/osx-64/sqlite-3.38.5-hd9f0692_0.tar.bz2
-https://conda.anaconda.org/conda-forge/osx-64/libopenblas-0.3.20-openmp_hb3cd9ec_0.tar.bz2
-https://conda.anaconda.org/conda-forge/osx-64/python-3.10.4-h1cc4136_0_cpython.tar.bz2
-https://conda.anaconda.org/conda-forge/osx-64/libblas-3.9.0-14_osx64_openblas.tar.bz2
-https://conda.anaconda.org/conda-forge/osx-64/python_abi-3.10-2_cp310.tar.bz2
-https://conda.anaconda.org/conda-forge/noarch/wheel-0.37.1-pyhd8ed1ab_0.tar.bz2
-https://conda.anaconda.org/conda-forge/osx-64/libcblas-3.9.0-14_osx64_openblas.tar.bz2
-https://conda.anaconda.org/conda-forge/osx-64/liblapack-3.9.0-14_osx64_openblas.tar.bz2
-https://conda.anaconda.org/conda-forge/osx-64/setuptools-62.2.0-py310h2ec42d9_0.tar.bz2
-https://conda.anaconda.org/conda-forge/osx-64/tornado-6.1-py310h1961e1f_3.tar.bz2
-https://conda.anaconda.org/conda-forge/osx-64/numpy-1.22.3-py310he1f95b8_2.tar.bz2
-https://conda.anaconda.org/conda-forge/noarch/pip-22.1-pyhd8ed1ab_0.tar.bz2
-https://conda.anaconda.org/conda-forge/noarch/snakeviz-2.1.1-pyhd8ed1ab_0.tar.bz2
+name: profiling
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.4
+  - numpy=1.22.3
+  - scikit-learn=1.0.2
+  - matplotlib=3.5.2
+  - line_profiler=3.4.0
+  - memory_profiler=0.60.0
+  - snakeviz=2.1.1
