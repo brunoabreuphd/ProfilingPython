@@ -5,7 +5,7 @@
 # National Center for Supercomputing Applications (NCSA)
 #  
 # Creation Date: Thursday, 12th May 2022, 1:16:26 pm
-# Last Modified: Thursday, 12th May 2022, 1:31:17 pm
+# Last Modified: Tuesday, 17th May 2022, 10:11:08 am
 #  
 # Copyright (c) 2022, Bruno R. de Abreu, National Center for Supercomputing Applications.
 # All rights reserved.
@@ -33,7 +33,8 @@ def create_data(nrows, ncols):
 def standardize_data(data):
     scaler = StandardScaler()
     scaler.fit(data)
-    return scaler.transform(data)
+    scaled = scaler.transform(data)
+    return scaled
 
 nrows = 2**20
 ncols = 2**6
