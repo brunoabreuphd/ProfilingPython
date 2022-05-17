@@ -3,13 +3,13 @@
 This repository contains examples on how to profile Python applications using [`cProfile`](https://docs.python.org/3/library/profile.html#module-cProfile), [`snakeviz`](http://jiffyclub.github.io/snakeviz/), [`line_profiler`](https://github.com/pyutils/line_profiler), and [`memory_profiler`](https://pypi.org/project/memory-profiler/) modules.
 
 ## Environment setup
-To reproduce the same environment, I suggest using Anaconda. If you have it installed, you can use [environment.yml](./environment.yml) to create it using
+To reproduce the same environment, I suggest using [Conda](https://docs.conda.io/projects/conda/en/latest/index.html) as your package manager. If you have it installed, you can use [environment.yml](./environment.yml) to create it using
 ```bash
-conda create --name <EnvName> --file environment.yml
+conda env create -f environment.yml
 ```
 and activate it with
 ```bash
-conda activate <EnvName>
+conda activate profiling
 ```
 
 ## Profiling
