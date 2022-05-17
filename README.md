@@ -44,7 +44,7 @@ We can also target individual functions with the `@profile` decorator. [`memory_
 ![image](https://user-images.githubusercontent.com/84105092/168887141-c6379677-7cb1-4387-9349-772dd9ba145e.png)
 
 
-### Jupyter notebooks
+## Jupyter notebooks
 Profiling Jupyter notebooks directly involves gjumping through some hoops. The simplest alternative is to copy the content of your cells into a Python script. It possible to get the same effect with the [`nbconvert`](https://nbconvert.readthedocs.io/en/latest/index.html):
 
 ```bash
