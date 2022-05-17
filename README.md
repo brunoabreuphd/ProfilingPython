@@ -45,7 +45,7 @@ We can also target individual functions with the `@profile` decorator. [`memory_
 
 
 ## Jupyter notebooks
-Profiling Jupyter notebooks directly involves gjumping through some hoops. The simplest alternative is to copy the content of your cells into a Python script. It possible to get the same effect with the [`nbconvert`](https://nbconvert.readthedocs.io/en/latest/index.html) module:
+Profiling Jupyter notebooks directly involves jumping through some hoops. The simplest alternative is to copy the content of your cells into a Python script. It possible to get the same effect with the [`nbconvert`](https://nbconvert.readthedocs.io/en/latest/index.html) module:
 
 ```bash
 jupyter nbconvert <YourNB>.ipynb --to script
