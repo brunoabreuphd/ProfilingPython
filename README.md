@@ -31,7 +31,7 @@ Once you spotted what functions, methods or routines are consuming most of the t
 
 
 ## Memory-based Profiling
-Understand your Python application in terms of time is definitely an important step, but to characterize your application workload better, we also need to understand how it uses memory. 
+Understanding your Python application in terms of time is definitely an important step, but to characterize your application workload better, we also need to understand how it uses memory. 
 
 ### Application overview
 We use the [`memory_profiler`](https://pypi.org/project/memory-profiler/) module to get an overview of how much memory a Python script is using as a function of time. For each example, the `memory/app-overview` folder contains the code to be profiled and a `profile.sh` script that uses the relevant binary (`mprof`) to generate the profiling data, which can be visualized using the `visualize.sh` script. A typical output is:
