@@ -1,11 +1,11 @@
 ###
-# File: train.py
+# File: data_loaders.py
 # Description: 
 # Author: Bruno R. de Abreu  |  babreu at illinois dot edu
 # National Center for Supercomputing Applications (NCSA)
 #  
-# Creation Date: Tuesday, 3rd January 2023, 3:02:13 pm
-# Last Modified: Tuesday, 3rd January 2023, 3:02:15 pm
+# Creation Date: Tuesday, 3rd January 2023, 3:00:37 pm
+# Last Modified: Tuesday, 3rd January 2023, 3:00:40 pm
 #  
 # Copyright (c) 2023, Bruno R. de Abreu, National Center for Supercomputing Applications.
 # All rights reserved.
@@ -23,18 +23,30 @@
 #          the software and its usage.
 ###
 
-import data_loaders as dl
-import optimization as opt
-import matploblib.pyplot as plt
+import tensorflow as tf
 
-if __name__== "__main__":
-    # load mnist data
-    X_train, Y_train, X_test, Y_test = dl.load_mnist_data()
+class MNISTDataLoader():
+    def __init__(self, one_hot_encode=False):
+        self.one_hot_encode = one_hot_encode
 
-    # set network dimensions
-    layers_dims = [784, 256, 128, 64, 10]
-    max_iter = 500
-    alpha = 0.1
+    def load_train_data(self):
+        """
+        Loads the MNIST dataset.
 
-    # train network
-    params, acc, loss = opt.gradient_descent_optimization(X_train, y_train, layers_dims, max_iter, alpha)
+        Returns:
+            - X_train: training set
+            - Y_train: training labels
+            - X_test: test set
+            - Y_test: test labels
+        """
+        # get it as it comes from keras
+        (X_train, Y_train), (X_test, Y_test) = tf.keras.datasets.mnist.load_data()
+
+        # preprocess
+        x_train = X_train.reshape(-1, 784).astype("float32") / 255.
+        x_test = X_test.reshape(-1,784).astype("float32") / 255.
+        y_train = Y_train.astype("int")
+        y_test = Y_test.astype("int")
+
+
+        return x_train.T, y_train.T
