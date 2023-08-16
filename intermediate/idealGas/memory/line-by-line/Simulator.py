@@ -6,6 +6,7 @@ class Simulator:
         self.configurationSpace = configurationSpace
         self.lastAcceptanceRatio = 0.0
 
+    @profile	
     def run(self, nSteps, trialDisplacement=1.0, checkPointInterval=0.25):
         """
         Proposes a number of displacements, accepting it if particles don't leave the cell. 
