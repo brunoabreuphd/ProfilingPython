@@ -10,5 +10,3 @@ dependencies:
   - memory_profiler=0.60.0
   - snakeviz=2.1.1
   - pip=23.2.1
-  - pip:
-      - tensorflow==2.13.0
