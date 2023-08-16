@@ -28,6 +28,6 @@ if __name__ == "__main__":
     optimizer = Optimizer(propagator)
 
     start = time.perf_counter()
-    model, accuracies, losses = optimizer.gradient_descent(model, 1000)
+    model, accuracies, losses = optimizer.gradient_descent(model, 200)
     stop = time.perf_counter()
     print("Time to train (s): %.2f" % (stop - start))
